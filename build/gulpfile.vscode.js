@@ -35,11 +35,11 @@ const { compileExtensionsBuildTask } = require('./gulpfile.extensions');
 
 // Build
 const vscodeEntryPoints = _.flatten([
-	buildfile.entrypoint('vs/workbench/workbench.desktop.main'),
+	buildfile.entrypoint('vs/workbench/workbench.native.main'),
 	buildfile.base,
 	buildfile.workerExtensionHost,
 	buildfile.workerNotebook,
-	buildfile.workbenchDesktop,
+	buildfile.workbenchNative,
 	buildfile.code
 ]);
 
@@ -157,8 +157,8 @@ function packageTask(platform, arch, sourceFolderName, destinationFolderName, op
 
 		const checksums = computeChecksums(out, [
 			'vs/base/parts/sandbox/electron-browser/preload.js',
-			'vs/workbench/workbench.desktop.main.js',
-			'vs/workbench/workbench.desktop.main.css',
+			'vs/workbench/workbench.native.main.js',
+			'vs/workbench/workbench.native.main.css',
 			'vs/workbench/services/extensions/node/extensionHostProcess.js',
 			'vs/code/electron-browser/workbench/workbench.html',
 			'vs/code/electron-browser/workbench/workbench.js'

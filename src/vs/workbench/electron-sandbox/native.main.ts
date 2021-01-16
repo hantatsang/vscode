@@ -37,7 +37,7 @@ import { RemoteAuthorityResolverService } from 'vs/platform/remote/electron-sand
 import { IUriIdentityService } from 'vs/workbench/services/uriIdentity/common/uriIdentity';
 import { UriIdentityService } from 'vs/workbench/services/uriIdentity/common/uriIdentityService';
 
-class DesktopMain extends Disposable {
+class NativeMain extends Disposable {
 
 	private readonly environmentService = new SimpleNativeWorkbenchEnvironmentService(this.configuration);
 
@@ -143,10 +143,10 @@ class DesktopMain extends Disposable {
 		//
 		// NOTE: Please do NOT register services here. Use `registerSingleton()`
 		//       from `workbench.common.main.ts` if the service is shared between
-		//       desktop and web or `workbench.sandbox.main.ts` if the service
-		//       is desktop only.
+		//       native and web or `workbench.sandbox.main.ts` if the service
+		//       is native only.
 		//
-		//       DO NOT add services to `workbench.desktop.main.ts`, always add
+		//       DO NOT add services to `workbench.native.main.ts`, always add
 		//       to `workbench.sandbox.main.ts` to support our Electron sandbox
 		//
 		// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -185,10 +185,10 @@ class DesktopMain extends Disposable {
 		//
 		// NOTE: Please do NOT register services here. Use `registerSingleton()`
 		//       from `workbench.common.main.ts` if the service is shared between
-		//       desktop and web or `workbench.sandbox.main.ts` if the service
-		//       is desktop only.
+		//       native and web or `workbench.sandbox.main.ts` if the service
+		//       is native only.
 		//
-		//       DO NOT add services to `workbench.desktop.main.ts`, always add
+		//       DO NOT add services to `workbench.native.main.ts`, always add
 		//       to `workbench.sandbox.main.ts` to support our Electron sandbox
 		//
 		// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -222,10 +222,10 @@ class DesktopMain extends Disposable {
 		//
 		// NOTE: Please do NOT register services here. Use `registerSingleton()`
 		//       from `workbench.common.main.ts` if the service is shared between
-		//       desktop and web or `workbench.sandbox.main.ts` if the service
-		//       is desktop only.
+		//       native and web or `workbench.sandbox.main.ts` if the service
+		//       is native only.
 		//
-		//       DO NOT add services to `workbench.desktop.main.ts`, always add
+		//       DO NOT add services to `workbench.native.main.ts`, always add
 		//       to `workbench.sandbox.main.ts` to support our Electron sandbox
 		//
 		// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -257,10 +257,10 @@ class DesktopMain extends Disposable {
 		//
 		// NOTE: Please do NOT register services here. Use `registerSingleton()`
 		//       from `workbench.common.main.ts` if the service is shared between
-		//       desktop and web or `workbench.sandbox.main.ts` if the service
-		//       is desktop only.
+		//       native and web or `workbench.sandbox.main.ts` if the service
+		//       is native only.
 		//
-		//       DO NOT add services to `workbench.desktop.main.ts`, always add
+		//       DO NOT add services to `workbench.native.main.ts`, always add
 		//       to `workbench.sandbox.main.ts` to support our Electron sandbox
 		//
 		// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -279,7 +279,7 @@ class DesktopMain extends Disposable {
 }
 
 export function main(configuration: INativeWorkbenchConfiguration): Promise<void> {
-	const workbench = new DesktopMain(configuration);
+	const workbench = new NativeMain(configuration);
 
 	return workbench.open();
 }

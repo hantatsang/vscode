@@ -14,7 +14,7 @@ import { getPathFromAmdModule } from 'vs/base/common/amd';
 import { CancellationToken } from 'vs/base/common/cancellation';
 import { RequestService } from 'vs/platform/request/node/requestService';
 import { TestConfigurationService } from 'vs/platform/configuration/test/common/testConfigurationService';
-import 'vs/workbench/workbench.desktop.main';
+import 'vs/workbench/workbench.native.main';
 import { NullLogService } from 'vs/platform/log/common/log';
 
 

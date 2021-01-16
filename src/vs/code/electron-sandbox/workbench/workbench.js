@@ -16,12 +16,12 @@
 
 	// Load workbench main JS, CSS and NLS all in parallel. This is an
 	// optimization to prevent a waterfall of loading to happen, because
-	// we know for a fact that workbench.desktop.sandbox.main will depend on
+	// we know for a fact that workbench.native.sandbox.main will depend on
 	// the related CSS and NLS counterparts.
 	bootstrapWindow.load([
-		'vs/workbench/workbench.desktop.sandbox.main',
-		'vs/nls!vs/workbench/workbench.desktop.main',
-		'vs/css!vs/workbench/workbench.desktop.main'
+		'vs/workbench/workbench.native.sandbox.main',
+		'vs/nls!vs/workbench/workbench.native.main',
+		'vs/css!vs/workbench/workbench.native.main'
 	],
 		function (_, configuration) {
 
@@ -29,7 +29,7 @@
 			performance.mark('code/didLoadWorkbenchMain');
 
 			// @ts-ignore
-			return require('vs/workbench/electron-sandbox/desktop.main').main(configuration);
+			return require('vs/workbench/electron-sandbox/native.main').main(configuration);
 		},
 		{
 			removeDeveloperKeybindingsAfterLoad: true,

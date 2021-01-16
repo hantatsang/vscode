@@ -72,8 +72,8 @@ import 'vs/workbench/contrib/logs/electron-sandbox/logs.contribution';
 // Localizations
 import 'vs/workbench/contrib/localizations/browser/localizations.contribution';
 
-// Desktop
-import 'vs/workbench/electron-sandbox/desktop.contribution';
+// Native
+import 'vs/workbench/electron-sandbox/native.contribution';
 
 // Explorer
 import 'vs/workbench/contrib/files/electron-sandbox/files.contribution';

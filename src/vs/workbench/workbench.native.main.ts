@@ -8,8 +8,8 @@
 //
 // NOTE: Please do NOT register services here. Use `registerSingleton()`
 //       from `workbench.common.main.ts` if the service is shared between
-//       desktop and web or `workbench.sandbox.main.ts` if the service
-//       is desktop only.
+//       native and web or `workbench.sandbox.main.ts` if the service
+//       is native only.
 //
 //       The `node` & `electron-browser` layer is deprecated for workbench!
 //
@@ -27,17 +27,17 @@ import 'vs/workbench/workbench.sandbox.main';
 //
 // NOTE: Please do NOT register services here. Use `registerSingleton()`
 //       from `workbench.common.main.ts` if the service is shared between
-//       desktop and web or `workbench.sandbox.main.ts` if the service
-//       is desktop only.
+//       native and web or `workbench.sandbox.main.ts` if the service
+//       is native only.
 //
 //       The `node` & `electron-browser` layer is deprecated for workbench!
 //
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
-//#region --- workbench (desktop main)
+//#region --- workbench (native main)
 
-import 'vs/workbench/electron-browser/desktop.main';
+import 'vs/workbench/electron-browser/native.main';
 
 //#endregion
 
@@ -49,8 +49,8 @@ import 'vs/workbench/electron-browser/desktop.main';
 //
 // NOTE: Please do NOT register services here. Use `registerSingleton()`
 //       from `workbench.common.main.ts` if the service is shared between
-//       desktop and web or `workbench.sandbox.main.ts` if the service
-//       is desktop only.
+//       native and web or `workbench.sandbox.main.ts` if the service
+//       is native only.
 //
 //       The `node` & `electron-browser` layer is deprecated for workbench!
 //
@@ -78,8 +78,8 @@ import 'vs/workbench/services/diagnostics/electron-browser/diagnosticsService';
 //
 // NOTE: Please do NOT register services here. Use `registerSingleton()`
 //       from `workbench.common.main.ts` if the service is shared between
-//       desktop and web or `workbench.sandbox.main.ts` if the service
-//       is desktop only.
+//       native and web or `workbench.sandbox.main.ts` if the service
+//       is native only.
 //
 //       The `node` & `electron-browser` layer is deprecated for workbench!
 //
@@ -101,8 +101,8 @@ registerSingleton(ISharedProcessService, SharedProcessService, true);
 //
 // NOTE: Please do NOT register services here. Use `registerSingleton()`
 //       from `workbench.common.main.ts` if the service is shared between
-//       desktop and web or `workbench.sandbox.main.ts` if the service
-//       is desktop only.
+//       native and web or `workbench.sandbox.main.ts` if the service
+//       is native only.
 //
 //       The `node` & `electron-browser` layer is deprecated for workbench!
 //
@@ -132,8 +132,8 @@ import 'vs/workbench/contrib/webview/electron-browser/webview.contribution';
 //
 // NOTE: Please do NOT register services here. Use `registerSingleton()`
 //       from `workbench.common.main.ts` if the service is shared between
-//       desktop and web or `workbench.sandbox.main.ts` if the service
-//       is desktop only.
+//       native and web or `workbench.sandbox.main.ts` if the service
+//       is native only.
 //
 //       The `node` & `electron-browser` layer is deprecated for workbench!
 //
@@ -160,8 +160,8 @@ import 'vs/workbench/contrib/externalTerminal/node/externalTerminal.contribution
 //
 // NOTE: Please do NOT register services here. Use `registerSingleton()`
 //       from `workbench.common.main.ts` if the service is shared between
-//       desktop and web or `workbench.sandbox.main.ts` if the service
-//       is desktop only.
+//       native and web or `workbench.sandbox.main.ts` if the service
+//       is native only.
 //
 //       The `node` & `electron-browser` layer is deprecated for workbench!
 //
@@ -185,8 +185,8 @@ import 'vs/workbench/contrib/userDataSync/electron-browser/userDataSync.contribu
 //
 // NOTE: Please do NOT register services here. Use `registerSingleton()`
 //       from `workbench.common.main.ts` if the service is shared between
-//       desktop and web or `workbench.sandbox.main.ts` if the service
-//       is desktop only.
+//       native and web or `workbench.sandbox.main.ts` if the service
+//       is native only.
 //
 //       The `node` & `electron-browser` layer is deprecated for workbench!
 //

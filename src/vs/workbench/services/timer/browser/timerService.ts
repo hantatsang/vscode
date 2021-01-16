@@ -187,7 +187,7 @@ export interface IStartupMetrics {
 
 		/**
 		 * The time it took to create a new renderer (browser window) and to initialize that to the point
-		 * of load the main-bundle (`workbench.desktop.main.js`).
+		 * of load the main-bundle (`workbench.native.main.js`).
 		 *
 		 * * Happens in the main-process *and* the renderer-process
 		 * * Measured with the `code/willOpenNewWindow` and `willLoadWorkbenchMain` performance marks.
@@ -240,7 +240,7 @@ export interface IStartupMetrics {
 		readonly ellapsedOtherUserDataInit: number;
 
 		/**
-		 * The time it took to load the main-bundle of the workbench, e.g. `workbench.desktop.main.js`.
+		 * The time it took to load the main-bundle of the workbench, e.g. `workbench.native.main.js`.
 		 *
 		 * * Happens in the renderer-process
 		 * * Measured with the `willLoadWorkbenchMain` and `didLoadWorkbenchMain` performance marks.

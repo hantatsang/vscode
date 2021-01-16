@@ -832,7 +832,7 @@
 				]
 			},
 			{
-				"target": "**/src/vs/workbench/workbench.desktop.main.ts",
+				"target": "**/src/vs/workbench/workbench.native.main.ts",
 				"restrictions": [
 					"vs/nls",
 					"**/vs/base/**/{common,browser,node,electron-sandbox,electron-browser}/**",

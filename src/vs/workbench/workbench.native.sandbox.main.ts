@@ -24,9 +24,9 @@ import 'vs/workbench/workbench.sandbox.main';
 //#endregion
 
 
-//#region --- workbench (desktop main)
+//#region --- workbench (native main)
 
-import 'vs/workbench/electron-sandbox/desktop.main';
+import 'vs/workbench/electron-sandbox/native.main';
 
 //#endregion
 
